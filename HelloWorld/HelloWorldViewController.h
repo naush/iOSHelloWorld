@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HelloWorldViewController : UIViewController {
-    
+  UILabel *textLabel;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *textLabel;
+
+- (IBAction)changeTheTextOfTheLabel;
 
 @end

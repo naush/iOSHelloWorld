@@ -20,14 +20,13 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)drawRect:(CGRect) rect {
+    NSString *hello   = @"Hello, World!";
+    CGPoint  location = CGPointMake(10, 20);
+    UIFont   *font    = [UIFont systemFontOfSize:24.0];
+    [[UIColor redColor] set];
+    [hello drawAtPoint:location withFont:font];
 }
-*/
 
 - (void)dealloc
 {

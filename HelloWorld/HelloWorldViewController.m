@@ -10,9 +10,17 @@
 
 @implementation HelloWorldViewController
 
+@synthesize textLabel;
+
 - (void)dealloc
 {
+    [textLabel release];
     [super dealloc];
+}
+
+- (IBAction)changeTheTextOfTheLabel
+{
+    [textLabel setText:@"Hello, World!"];
 }
 
 - (void)didReceiveMemoryWarning
